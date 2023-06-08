@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+@font-face{
+
+  font-family: 'NeueHaasDisplayMedium';
+  src: url('./fonts/NeueHaasDisplayMedium.ttf');
+
+  font-family: 'HELROM';
+  src: url('./fonts/NeueHaasDisplayRoman.ttf')
+
 }

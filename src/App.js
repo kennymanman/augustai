@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Dashboard from './Dashboard';
+import Chat from "./pages/Chat"
+import Meeting from "./pages/Meeting"
+import Presentation from './pages/Presentation';
+import Webvisit from './pages/Webvisit';
+import Reminder from './pages/Reminder';
+
 
 function App() {
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    
+    <Routes>
+      
+    <Route path="/" element={<Dashboard/>}/>
+    <Route path="/Chat" element={<Chat />} />
+    <Route path="/Meeting" element={<Meeting />} />
+    <Route path="/Presentation" element={<Presentation />} />
+    <Route path="/Reminder" element={<Reminder />} />
+    <Route path="/Webvisit" element={<Webvisit />} />
+  
+    </Routes>
+    
+    </Router>
+
+    
   );
 }
 
