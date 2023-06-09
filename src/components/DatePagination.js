@@ -1,4 +1,16 @@
 import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import db from "../firebaseConfig"
+
+
+
+
+
+
+
+
+
 
 const DatePagination = ({ dates, selectedDate, onPageChange,  onMonthChange, onYearChange }) => {
 
@@ -6,6 +18,8 @@ const containerRef = useRef(null);
 const [selectedDetails, setSelectedDetails] = useState(null);
 const [selectedMonth, setSelectedMonth] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
+
+  const navigate = useNavigate();
 
 
     const scrollLeft = () => {
@@ -17,13 +31,14 @@ const [selectedMonth, setSelectedMonth] = useState('');
     };
 
 
-    const handleDateClick = (date, month, year, dayNumber, dayName, day, firstname, lastname, email, message) => {
+    const handleDateClick = (date, month, year,  dayNumber, dayName, day, firstname, lastname, email, message) => {
       const details = fetchDetailsFromAPI(date); // Replace with your API call or data retrieval logic
   
       setSelectedDetails(details);
-      
       setSelectedMonth(month);
       setSelectedYear(year);
+
+      
 
         // Set the selected month and year in the dropdown menus
   const monthOption = dates.find(d => d.date === date);
@@ -53,6 +68,10 @@ const renderYearOptions = yearOptions.map(year => (
     {year}
   </option>
 ));
+
+
+
+
 
     
     const fetchDetailsFromAPI = (date) => {
@@ -88,6 +107,9 @@ const renderYearOptions = yearOptions.map(year => (
     };
 
 
+    const handleOpenLink = (name, email, date) => {
+      navigate('/Chatfull', { state: { name, email, date} });
+    };
 
   return (
 <div>
@@ -212,6 +234,15 @@ onChange={(e) => setSelectedMonth(e.target.value)}
             <div key={index}>
               <div className="text-lg font-bold">{detail.name}</div>
               <div className="text-sm text-gray-600">{detail.email}</div>
+
+           
+                <button className="mt-2 bg-blue-500 text-white py-2 px-4 rounded"
+                onClick={() => handleOpenLink(detail.name, detail.email, detail.date)}
+                >
+                  Open Link
+                </button>
+              
+
             </div>
           ))}
   </div>

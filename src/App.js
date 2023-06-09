@@ -9,10 +9,12 @@ import Meeting from "./pages/Meeting"
 import Presentation from './pages/Presentation';
 import Webvisit from './pages/Webvisit';
 import Reminder from './pages/Reminder';
+import Chatfull from './pages/Chatfull';
 
 
 function App() {
 
+  
 
   
   return (
@@ -26,6 +28,7 @@ function App() {
     <Route path="/Presentation" element={<Presentation />} />
     <Route path="/Reminder" element={<Reminder />} />
     <Route path="/Webvisit" element={<Webvisit />} />
+    <Route path="/Chatfull" element={<Chatfull />} />
   
     </Routes>
     
