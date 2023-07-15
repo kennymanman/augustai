@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import db from "../firebaseConfig"
+
 
 
 
@@ -51,6 +51,8 @@ const [selectedMonth, setSelectedMonth] = useState('');
     };
   
 
+
+    
 
    const monthOptions = Array.from(new Set(dates.map(date => date.month)));
 const renderMonthOptions = monthOptions.map(month => (
@@ -199,7 +201,7 @@ onChange={(e) => setSelectedMonth(e.target.value)}
           className={`mx-2 px-3 py-2 rounded-full relative ${
             date.date === selectedDate ? 'bg-green-500 text-black font-custom font-semibold' : 'bg-gray-200'
           }`}
-          onClick={() => handleDateClick(date.date, date.month, date.year, date.dayNumber, date.dayName)}
+          onClick={() => handleDateClick(date.date, date.month, date.year, date.dayNumber, date.dayName, index + 1)}
         >
 
 <div className='left-0 text-sm rounded-full bg-red-400'>{getDetailsCountForDate(date.date)}</div>
