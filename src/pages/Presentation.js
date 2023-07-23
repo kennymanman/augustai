@@ -78,7 +78,7 @@ src={tree} alt="newsletter"
 <div  className='col-span-2 bg-lime-300 rounded-md p-2  '>
   <h3 className='text-black font-custom text-5xl font-medium tracking-tighter line-clamp-2  '>Welcome {user.displayName}</h3>
 
-<div className='grid place-items-end '>
+<div className=''>
   <h4 className='text-black font-custom text-xl font-medium tracking-tighter line-clamp-2 mt-20  '>IT Personel</h4>
 </div>
 
@@ -135,7 +135,7 @@ src={tree} alt="newsletter"
 
 <Link className='text-black' to="/Audience">
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 col-span-1 stroke-1 fill-green-500">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 col-span-1 stroke-1 fill-green-500">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
 
@@ -151,9 +151,9 @@ src={tree} alt="newsletter"
 <hr className='border-black'/> 
 <h3 className='text-black font-custom text-4xl font-medium tracking-tighter line-clamp-2  '>Create Email or SMS campaign</h3>
 
-<Link className='text-black'  to="/Audience">
+<Link className='text-black'  to="/Campaignselect">
 <button>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 stroke-1 fill-green-500 ">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 stroke-1 fill-green-500 ">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
 </button>

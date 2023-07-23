@@ -4,6 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import {CgNotes , CgHeart, CgCheckO, CgBell, CgUserList, CgArrowLeft, CgTrash } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import NotesUI from '../components/NotesUI';
+import NotesApp from "../components/NotesApp"
 
 
 
@@ -214,7 +215,7 @@ className='object-bottom object-fill w-fit h-fit absolute rounded-lg '>
 <>
 
 {/*<h1 className='p-4 font-custom text-3xl font-medium tracking-tighter line-clamp-2'>All notes</h1>*/}
-<NotesUI/>
+<NotesApp/>
 </>
 }
 

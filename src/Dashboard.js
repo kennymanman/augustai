@@ -38,6 +38,8 @@ const [data, setData] = useState({})
 
 const [location, setLocation] = useState("")
 
+
+
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=7130f0ff7221e63b3e0e85127e670e7a`
 
 
@@ -52,6 +54,9 @@ const searchLocation = (event) => {
     setLocation('')
   }
 }
+
+
+
 
 
 
@@ -268,7 +273,11 @@ className='object-bottom object-fill w-full h-full absolute '>
 
 <div className='text-start'>
 <p className='font-custom text-lg font-medium tracking-tighter' >Create<br/>and Schedule Meetings</p>
-<Link to="/Meeting">See More</Link>
+<Link to="/Meeting">Meetings Screen</Link>
+
+<Link to="/Myoffice">My Office</Link>
+
+<Link to="/Announcement">Announcements</Link>
 </div>
 </div>
 
@@ -294,7 +303,15 @@ className='object-bottom object-fill w-full h-full absolute '>
 </div>
 
 
-<div className='bg-yellow-500 border-2 border-slate-900 h-44 mt-2 relative '>Ad Carousel</div>
+<div className='bg-yellow-500 border-2 border-slate-900 h-44 mt-2 relative '>Ad Carousel
+
+
+
+
+
+
+
+</div>
 
 
 

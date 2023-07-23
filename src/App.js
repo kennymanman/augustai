@@ -26,6 +26,11 @@ import DetailsEdit from './pages/DetailsEdit';
 import Resetpassword from './pages/Resetpassword';
 import Notes from "./pages/Notes"
 import Audience from "./pages/Audience"
+import Campaignselect from './pages/Campaignselect';
+import Sms from "./pages/Sms"
+import Email from "./pages/Email"
+import Myoffice from "./pages/Myoffice"
+import Announcement from './pages/Announcement';
 
 
 
@@ -68,6 +73,11 @@ return (
     <Route path="/Resetmypassword" element={<Resetpassword />} />
     <Route path="/Notes" element={<Notes />} />
     <Route path="/Audience" element={<Audience />} />
+    <Route path="/Campaignselect" element={<Campaignselect />} />
+    <Route path="/SMS" element={<Sms />} />
+    <Route path="/Email" element={<Email />} />
+    <Route path="/Myoffice" element={<Myoffice />} />
+    <Route path="/Announcement" element={<Announcement />} />
     
   </Routes>
   </Router>
