@@ -9,7 +9,10 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+<<<<<<< HEAD
     "@lexical/react": "^0.12.0",
+=======
+>>>>>>> 7b690f721f5c0ab6c73008d5a82393791a9fb320
     "@mui/material": "^5.13.3",
     "@mui/x-date-pickers": "^6.5.0",
     "@react-email/button": "0.0.10",

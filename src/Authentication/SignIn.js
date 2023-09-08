@@ -36,6 +36,7 @@ const Signin = () => {
 <div className=' p-3 h-screen bg-gradient-to-r from-black via-black to-blue-600 '>
 
 
+<<<<<<< HEAD
 {/*
 <img 
 className='object-bottom object-cover w-full h-fit  absolute '
@@ -67,6 +68,12 @@ src={signinscreenone} alt="newsletter"
  <hr className='border-white  border-2  '/> 
 
 
+=======
+<img 
+className='object-bottom object-cover w-full h-full  absolute '
+src={signinscreenone} alt="newsletter"
+/>
+>>>>>>> 7b690f721f5c0ab6c73008d5a82393791a9fb320
 
 
 
@@ -87,14 +94,26 @@ src={signinscreenone} alt="newsletter"
 
           <button onClick={handleSubmit}> Sign In</button> */}
 
+<<<<<<< HEAD
 <div className='grid grid-cols-5 gap-2 h-fit '>
+=======
+<div className='grid grid-cols-5 gap-2 '>
+>>>>>>> 7b690f721f5c0ab6c73008d5a82393791a9fb320
 
 <div className='col-span-2 relative p-3 '>
 
 
+<<<<<<< HEAD
 
 
 <div className='mt-64'>
+=======
+<h2 className='text-white font-custom text-2xl font-medium tracking-tighter relative mt-2'>August AI.</h2>
+
+<hr className='relative border-white border-2'/>
+
+<div className='mt-80'>
+>>>>>>> 7b690f721f5c0ab6c73008d5a82393791a9fb320
 <h1 className='text-white font-custom text-7xl font-medium tracking-tighter '>Sign in to your account</h1>
 
 <h1 className='text-white font-custom text-3xl font-medium tracking-tighter mt-7'>Collaboration + AI + Chatbot.</h1>
@@ -116,7 +135,11 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, wh
 
 <input onChange={(e) => setPassword(e.target.value)} className='border-b-2 py-4 w-full relative bg-transparent rounded-t-lg placeholder:text-white p-2 text-white text-2xl' type='password' placeholder='PASSWORD' />
 
+<<<<<<< HEAD
 <button onClick={handleSubmit} className='w-full bg-gray-600 text-white rounded-lg py-3 font-medium tracking-tighter font-custom text-xl  '>Log in</button>
+=======
+<button onClick={handleSubmit} className='w-full bg-black text-white rounded-lg py-3 font-medium tracking-tighter font-custom text-xl  '>Log in</button>
+>>>>>>> 7b690f721f5c0ab6c73008d5a82393791a9fb320
 
 <h4 className='text-white font-custom text-sm font-medium tracking-tighter'>Dont have an account or forgot your password or email? send a message to the office admin for your login details or change of password/email.</h4>
 </div>
