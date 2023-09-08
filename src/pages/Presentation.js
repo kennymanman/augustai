@@ -124,9 +124,9 @@ src={tree} alt="newsletter"
 </div>
 
 
-<div className=' grid grid-cols-5 gap-1 '>
+<div className=' grid grid-cols-5 gap-1 h-full '>
 
-<div className=' col-span-3 bg-green-300 rounded-md p-2 '>
+<div className=' col-span-3 bg-green-300 rounded-md p-2 h-fit '>
 <p className='font-custom text-xl font-medium tracking-tighter line-clamp'>Audience</p>
 <hr className='border-gray'/>
 
@@ -149,7 +149,7 @@ src={tree} alt="newsletter"
 <div className='col-span-2 bg-slate-300 rounded-md p-2'>
 <p className='font-custom text-xl font-medium tracking-tighter line-clamp'>Campaign</p>
 <hr className='border-black'/> 
-<h3 className='text-black font-custom text-4xl font-medium tracking-tighter line-clamp-2  '>Create Email or SMS campaign</h3>
+<h3 className='text-black font-custom text-4xl font-medium tracking-tighter line-clamp-2 mt-4 '>Create Email or SMS campaign</h3>
 
 <Link className='text-black'  to="/Campaignselect">
 <button>

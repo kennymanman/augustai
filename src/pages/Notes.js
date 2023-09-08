@@ -199,6 +199,10 @@ className='object-bottom object-fill w-fit h-fit absolute rounded-lg '>
 
 <hr/>
 
+
+
+<div>
+
 {/* Content of the selected section */}
 {selectedSection === 'favorites' && 
 
@@ -260,6 +264,8 @@ className='object-bottom object-fill w-fit h-fit absolute rounded-lg '>
 </>
 }
 
+
+</div>
 
 
 

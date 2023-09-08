@@ -257,6 +257,8 @@ className='object-bottom object-fill w-full h-full absolute '>
   
 <p className=' text-start font-custom text-3xl font-bold tracking-tighter '>Reminder</p>
   <Link to="/Reminder">Remind</Link>
+
+  <Link to="/MySpace">MySpace</Link>
   </div>
 
 </div>
@@ -298,7 +300,12 @@ className='object-bottom object-fill w-full h-full absolute '>
 
   <div className='bg-green-500 rounded-md max-h-fit border-2 border-slate-900 p-2 '>
   <p className=' text-start font-custom text-3xl font-bold tracking-tighter '>Presentation</p>
-  <Link to="/Presentation">See More</Link>
+  <Link to="/Presentation">Campaign</Link>
+
+  <Link to="/MediaUpload">Uploads & Media</Link>
+
+  <Link to="/Support">Support</Link>
+
   </div>
 </div>
 

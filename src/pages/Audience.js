@@ -102,7 +102,7 @@ const Audience = () => {
     <section className="flex gap-6 " >
 
 <img 
-className='object-bottom object-cover w-full h-full   fixed  '
+className='object-bottom object-cover w-full h-full fixed  '
 src={field} alt="newsletter"
 />
 

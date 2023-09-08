@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 import {Auth} from "./Authentication/auth"
@@ -31,6 +32,9 @@ import Sms from "./pages/Sms"
 import Email from "./pages/Email"
 import Myoffice from "./pages/Myoffice"
 import Announcement from './pages/Announcement';
+import MediaUpload from "./pages/MediaUpload"
+import Support from "./pages/Support"
+import MySpace from './pages/MySpace';
 
 
 
@@ -78,6 +82,9 @@ return (
     <Route path="/Email" element={<Email />} />
     <Route path="/Myoffice" element={<Myoffice />} />
     <Route path="/Announcement" element={<Announcement />} />
+    <Route path="/MediaUpload" element={<MediaUpload />} />
+    <Route path="/Support" element={<Support />} />
+    <Route path="/MySpace" element={<MySpace />} />
     
   </Routes>
   </Router>

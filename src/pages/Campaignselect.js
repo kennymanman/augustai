@@ -13,15 +13,15 @@ export default function Campaignselect() {
 
 
 
-    <div className='p-2 bg-black '>
+    <div className=' bg-black  '>
 
 <div className='grid grid-cols-5 '>
 
 
-<div className='relative h-screen col-span-2'>
+<div className='relative h-screen col-span-2 '>
 
 <img 
-className='object-bottom object-cover w-full h-full rounded-md absolute '
+className='object-bottom object-cover w-full h-full rounded-r-lg absolute  '
 src={hill} alt="newsletter"
 />
 
@@ -41,23 +41,23 @@ src={hill} alt="newsletter"
 
        
 
-   <div className='col-span-3'>
+   <div className='col-span-3 h-screen'>
 
     <div className='text-center mt-40'>
 
-      <h3 className='text-white font-custom text-4xl font-medium tracking-tighter'>Select type</h3>
+      <h3 className='text-white font-custom text-5xl font-medium tracking-tighter'>Select type</h3>
       <hr className='border-white '/>
 
 <div className='grid grid-rows-2 gap-11 justify-items-center mt-20 text-center '>
 
 
 <Link to="/Email">
-<button className= 'bg-white rounded-full px-28  py-2 font-medium tracking-tighter font-custom text-center text-lg text-black'>Create Email Campaign</button>
+<button className= 'bg-white rounded-lg px-28  py-2 font-medium tracking-tighter font-custom text-center text-lg text-black'>Create Email campaign</button>
 </Link>
 
 
 <Link to="/Sms">
-<button className='bg-white rounded-full px-28  py-2 font-medium tracking-tighter font-custom text-lg text-black '>Create SMS Campaign</button>
+<button className='bg-white rounded-lg px-28  py-2 font-medium tracking-tighter font-custom text-lg text-black '>Create SMS campaign</button>
 </Link>
 </div>
 
